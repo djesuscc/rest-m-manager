@@ -13,7 +13,7 @@ const post = (req, res = response) => {
     const { name, birthDay } = req.body;
     res.status(201).json({
         msg: "post API",
-        ...body,
+        ...req.body,
     });
 }
 
